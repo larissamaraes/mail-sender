@@ -11,7 +11,7 @@ public class Mailer {
     @Autowired
     private JavaMailSender javaMailSender;
 
-    public void send(MailMessage message){
+    public void send(MailMessage message) {
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
 
         simpleMailMessage.setFrom(message.getSender());
